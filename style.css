@@ -48,13 +48,22 @@ a:hover {
   text-decoration: underline;
 }
 
+p#link {
+  font-size: 5vw;
+  font-weight: 400;
+}
+
 section {
   padding-top: 10vh;
   padding-bottom: 10vh;
   line-height: 2em;
   padding-left: 30px;
   font-family: var(--fonte3);
-  font-size: 3.5vw;
+  font-size: 3vw;
+}
+
+section > p {
+  padding-bottom: 2em;
 }
 
 section.normal {
@@ -65,13 +74,29 @@ section.normal {
 section.imagem {
   background-color: rgb(93, 91, 91);
   color: #fff;
+  box-shadow: inset 6px 6px 13px 0px #000;
+  background-attachment: fixed; /* fixa a imagem ao fundo*/
 }
 
 section.imagem > p {
   display: inline-block;
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.515);
+  background-color: rgba(0, 0, 0, 0.582);
+  text-shadow: 1.5px 1.5px 1px #000;
 }
+
+section#img01 {
+  background-image: url(imagens/background001.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
+section#img02 {
+  background-image: url(imagens/background002.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
 footer {
   background-color: #000;
   text-align: center;
